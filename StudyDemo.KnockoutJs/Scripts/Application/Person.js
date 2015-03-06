@@ -1,6 +1,4 @@
-﻿
-var Person = {
-
+﻿var Person = {
     PrepareKo: function () {
         ko.bindingHandlers.date = {
             init: function (element, valueAccessor, allBindingsAccessor, viewModel) {
