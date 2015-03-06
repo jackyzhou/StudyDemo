@@ -145,8 +145,8 @@
     <Content Include="Scripts\jquery\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout\knockout-3.3.0.debug.js" />
     <Content Include="Scripts\knockout\knockout-3.3.0.min.js" />
-    <Content Include="Scripts\knockout\knockout.mapping-latest.debug.js" />
-    <Content Include="Scripts\knockout\knockout.mapping-latest.js" />
+    <Content Include="Scripts\knockout\knockout.mapping-2.4.1.debug.js" />
+    <Content Include="Scripts\knockout\knockout.mapping-2.4.1.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond\respond.js" />
     <Content Include="Scripts\respond\respond.matchmedia.addListener.js" />

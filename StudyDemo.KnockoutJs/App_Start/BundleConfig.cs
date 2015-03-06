@@ -25,7 +25,7 @@ namespace StudyDemo.KnockoutJs
 
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                    "~/Scripts/knockout/knockout-3.3.0.debug.js",
-                   "~/Scripts/knockout/knockout.mapping-latest.debug.js"));
+                   "~/Scripts/knockout/knockout.mapping-2.4.1.debug.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap/bootstrap.css",
