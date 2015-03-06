@@ -120,10 +120,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap\bootstrap.css" />
-    <Content Include="Content\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -133,25 +130,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\Application\Person.js" />
-    <Content Include="Scripts\bootstrap\bootstrap.js" />
-    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
-    <None Include="Scripts\jquery\jquery-2.1.3.intellisense.js" />
-    <Content Include="Scripts\jquery\jquery-2.1.3.js" />
-    <Content Include="Scripts\jquery\jquery-2.1.3.min.js" />
-    <None Include="Scripts\jquery\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery\jquery.validate.js" />
-    <Content Include="Scripts\jquery\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout\knockout-3.3.0.debug.js" />
-    <Content Include="Scripts\knockout\knockout-3.3.0.min.js" />
-    <Content Include="Scripts\knockout\knockout.mapping-2.4.1.debug.js" />
-    <Content Include="Scripts\knockout\knockout.mapping-2.4.1.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\respond\respond.js" />
-    <Content Include="Scripts\respond\respond.matchmedia.addListener.js" />
-    <Content Include="Scripts\respond\respond.matchmedia.addListener.min.js" />
-    <Content Include="Scripts\respond\respond.min.js" />
+    <Content Include="Scripts\thirdparty\bootstrap.js" />
+    <Content Include="Scripts\thirdparty\jquery-2.1.3.js" />
+    <Content Include="Scripts\thirdparty\knockout-3.3.0.js" />
+    <Content Include="Scripts\thirdparty\knockout.mapping-2.4.1.js" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -169,11 +151,6 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\bootstrap\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap\bootstrap.css.map" />
-    <Content Include="Scripts\jquery\jquery-2.1.3.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
