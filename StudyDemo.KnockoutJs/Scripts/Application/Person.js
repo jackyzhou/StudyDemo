@@ -61,13 +61,9 @@ var Person = {
                         // Handle error.
                     }
                 });
-
             }
-
         });
-
     },
-
 };
 
 $(document).ready(function () {
