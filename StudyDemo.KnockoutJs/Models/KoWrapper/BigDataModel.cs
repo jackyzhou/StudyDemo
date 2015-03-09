@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace KnockoutMvcDemo.Models
+namespace StudyDemo.KnockoutJs.Models
 {
     public class BigDataModel
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Script.Serialization;
 
-namespace KnockoutMvcDemo.Models
+namespace StudyDemo.KnockoutJs.Models
 {
     public class ContactsEditorPhoneModel
     {

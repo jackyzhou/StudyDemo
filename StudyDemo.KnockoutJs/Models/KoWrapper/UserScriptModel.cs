@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KnockoutMvcDemo.Models
+namespace StudyDemo.KnockoutJs.Models
 {
     public class UserScriptModel
     {

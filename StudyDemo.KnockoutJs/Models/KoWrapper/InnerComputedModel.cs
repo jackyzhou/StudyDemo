@@ -3,7 +3,7 @@ using System.Web.Script.Serialization;
 using Newtonsoft.Json;
 using StudyDemo.Framework.Knockout.Decompiler;
 
-namespace KnockoutMvcDemo.Models
+namespace StudyDemo.KnockoutJs.Models
 {
     public class InnerComputedItemModel
     {

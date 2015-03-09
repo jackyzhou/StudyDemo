@@ -1,4 +1,4 @@
-﻿namespace KnockoutMvcDemo.Models
+﻿namespace StudyDemo.KnockoutJs.Models
 {
     public class ParametersToServerModel
     {
