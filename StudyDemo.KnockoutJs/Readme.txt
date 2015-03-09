@@ -17,3 +17,7 @@
 
 5. Knockout JS 文檔：
    http://knockoutjs.com/documentation/introduction.html
+
+6. MVC中針對KnockoutJs的封裝：（引用第三方組件：https://github.com/hazzik/DelegateDecompiler）
+   http://knockoutmvc.com/
+   http://knockoutmvc.com/Home/Documentation
