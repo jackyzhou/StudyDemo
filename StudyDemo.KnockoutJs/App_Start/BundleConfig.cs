@@ -10,7 +10,8 @@ namespace StudyDemo.KnockoutJs
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                        "~/Scripts/thirdparty/jquery-{version}.js",
-                       "~/Scripts/thirdparty/jquery.form.js"));
+                       "~/Scripts/thirdparty/jquery.form.js",
+                       "~/Scripts/thirdparty/jquery.validate.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/thirdparty/bootstrap.js"));
