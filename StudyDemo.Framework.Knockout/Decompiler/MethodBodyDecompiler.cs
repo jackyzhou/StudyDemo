@@ -39,7 +39,9 @@ namespace StudyDemo.Framework.Knockout.Decompiler
         {
             var instructions = method.GetInstructions();
             var ex = Processor.Process(locals, args, instructions.First(), method.ReturnType);
-            return Expression.Lambda(new OptimizeExpressionVisitor().Visit(ex), args.Select(x => (ParameterExpression) x.Expression));
+            var express = new OptimizeExpressionVisitor().Visit(ex);
+            var parameters = args.Select(x => (ParameterExpression)x.Expression);
+            return Expression.Lambda(express, parameters);
         }
     }
 }

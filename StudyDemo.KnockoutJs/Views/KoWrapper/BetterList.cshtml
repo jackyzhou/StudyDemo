@@ -1,0 +1,25 @@
+﻿@using StudyDemo.Framework.Knockout
+@model StudyDemo.KnockoutJs.Models.BetterListModel
+@{
+    var ko = Html.CreateKnockoutContext();
+}
+@using (ko.Html.Form("AddBetterItem", "KoWrapper", null, new { id = "myform" }))
+{
+    <span>Add item: @ko.Html.TextBox(m => m.ItemToAdd).ValueUpdate(KnockoutValueUpdateKind.AfterKeyDown)</span>
+    <button type="submit" @ko.Bind.Enable(m => m.ItemToAdd.Length > 0)>Add</button>
+
+    <p>Your values:</p>
+    @ko.Html.ListBox(m => m.AllItems, new { width = 100, size = 10 }).SelectedOptions(m => m.SelectedItems)
+
+    <div>
+        @ko.Html.Button("Remove", "RemoveSelected", "KoWrapper").Enable(m => m.SelectedItems.Count > 0)
+        @ko.Html.Button("Sort", "SortItems", "KoWrapper").Enable(m => m.AllItems.Count > 1)
+    </div>
+}
+@section scripts
+{
+    <script type="text/javascript">
+        $('#myform').ajaxForm();
+    </script>
+    @ko.Apply(Model)
+}

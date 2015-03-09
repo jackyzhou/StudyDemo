@@ -148,6 +148,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Readme.txt" />
+    <Content Include="Scripts\thirdparty\jquery.form.js" />
+    <Content Include="Scripts\perpetuum.knockout.js" />
     <Content Include="Scripts\Application\Person.js" />
     <Content Include="Scripts\thirdparty\bootstrap.js" />
     <Content Include="Scripts\thirdparty\jquery-2.1.3.js" />
@@ -167,6 +169,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Person\Index.cshtml" />
     <Content Include="Views\KoWrapper\HelloWorld.cshtml" />
+    <Content Include="Views\KoWrapper\ClickCounter.cshtml" />
+    <Content Include="Views\KoWrapper\SimpleList.cshtml" />
+    <Content Include="Views\KoWrapper\BetterList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StudyDemo.Framework.Knockout\StudyDemo.Framework.Knockout.csproj">

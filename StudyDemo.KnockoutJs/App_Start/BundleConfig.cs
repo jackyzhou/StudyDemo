@@ -9,14 +9,16 @@ namespace StudyDemo.KnockoutJs
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                       "~/Scripts/thirdparty/jquery-{version}.js"));
+                       "~/Scripts/thirdparty/jquery-{version}.js",
+                       "~/Scripts/thirdparty/jquery.form.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/thirdparty/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                    "~/Scripts/thirdparty/knockout-3.3.0.js",
-                   "~/Scripts/thirdparty/knockout.mapping-2.4.1.js"));
+                   "~/Scripts/thirdparty/knockout.mapping-2.4.1.js",
+                   "~/Scripts/perpetuum.knockout.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

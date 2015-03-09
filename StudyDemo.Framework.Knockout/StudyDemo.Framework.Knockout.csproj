@@ -54,11 +54,7 @@
     <Compile Include="Binding\KnockoutBingindComplexItem.cs" />
     <Compile Include="Decompiler\Address.cs" />
     <Compile Include="Reflection\ByteBuffer.cs" />
-    <Compile Include="Decompiler\Cache.cs" />
     <Compile Include="Decompiler\ComputedAttribute.cs" />
-    <Compile Include="Decompiler\ComputedExtension.cs" />
-    <Compile Include="Decompiler\DecompiledQueryable.cs" />
-    <Compile Include="Decompiler\DecompiledQueryProvider.cs" />
     <Compile Include="Decompiler\DecompileExpressionVisitor.cs" />
     <Compile Include="Decompiler\DecompileExtensions.cs" />
     <Compile Include="Reflection\Disassembler.cs" />

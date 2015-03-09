@@ -28,34 +28,13 @@ namespace StudyDemo.Framework.Knockout.Decompiler
 
             return base.VisitMember(node);
         }
-
-        protected override Expression VisitMethodCall(MethodCallExpression node)
-        {
-            if (node.Method.IsGenericMethod && node.Method.GetGenericMethodDefinition() == typeof(ComputedExtension).GetMethod("Computed", BindingFlags.Static | BindingFlags.Public))
-            {
-                var arg = node.Arguments.SingleOrDefault() as MemberExpression;
-                var info = arg.Member as PropertyInfo;
-                if (info != null)
-                {
-                    var method = info.GetGetMethod();
-                    return Decompile(method, arg.Expression, new List<Expression>());
-                }
-            }
-
-            if (ShouldDecompile(node.Method))
-            {
-                return Decompile(node.Method, node.Object, node.Arguments);
-            }
-
-            return base.VisitMethodCall(node);
-        }
-
+        
         private bool ShouldDecompile(MemberInfo methodInfo)
         {
             return methodInfo.GetCustomAttributes(typeof(ComputedAttribute), true).Length > 0;
         }
 
-        Expression Decompile(MethodInfo method, Expression instance, IList<Expression> arguments)
+        private Expression Decompile(MethodInfo method, Expression instance, IList<Expression> arguments)
         {
             var expression = method.Decompile();
 
