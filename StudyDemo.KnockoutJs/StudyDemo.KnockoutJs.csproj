@@ -110,12 +110,30 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\KoWrapperController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\HtmlExtensions.cs" />
     <Compile Include="Helper\ViewModelConstants.cs" />
+    <Compile Include="Models\KoWrapper\BetterListModel.cs" />
+    <Compile Include="Models\KoWrapper\BigDataModel.cs" />
+    <Compile Include="Models\KoWrapper\ClickCounterModel.cs" />
+    <Compile Include="Models\KoWrapper\CollectionsModel.cs" />
+    <Compile Include="Models\KoWrapper\CombineContextModel.cs" />
+    <Compile Include="Models\KoWrapper\ComplexBindingModel.cs" />
+    <Compile Include="Models\KoWrapper\ContactsEditorModel.cs" />
+    <Compile Include="Models\KoWrapper\ControlTypesModel.cs" />
+    <Compile Include="Models\KoWrapper\GiftListModel.cs" />
+    <Compile Include="Models\KoWrapper\HelloWorldModel.cs" />
+    <Compile Include="Models\KoWrapper\InnerComputedModel.cs" />
+    <Compile Include="Models\KoWrapper\MultipleViewModelModel.cs" />
+    <Compile Include="Models\KoWrapper\ParametersToServerModel.cs" />
+    <Compile Include="Models\KoWrapper\RegionModel.cs" />
+    <Compile Include="Models\KoWrapper\SimpleListModel.cs" />
+    <Compile Include="Models\KoWrapper\UserScriptModel.cs" />
     <Compile Include="Models\PersonViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -148,11 +166,18 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\KoWrapper\HelloWorld.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\StudyDemo.Framework.Knockout\StudyDemo.Framework.Knockout.csproj">
+      <Project>{8480566d-5fbc-4605-854e-ec82daf75970}</Project>
+      <Name>StudyDemo.Framework.Knockout</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
