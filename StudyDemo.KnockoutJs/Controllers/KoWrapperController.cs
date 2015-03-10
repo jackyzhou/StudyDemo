@@ -331,5 +331,83 @@ namespace StudyDemo.KnockoutJs.Controllers
         }
 
         #endregion
+
+        #region Multiple View Model
+        public ActionResult MultipleViewModel()
+        {
+            InitializeViewBag("Multiple ViewModel in the same View");
+            var model = new MultipleViewModelModel
+            {
+                ClickCounterModel = new ClickCounterModel(),
+                HelloWorldModel = new HelloWorldModel
+                {
+                    FirstName = "Steve",
+                    LastName = "Sanderson"
+                }
+            };
+            return View(model);
+        }
+        #endregion
+
+        #region Parameters To Server
+
+        public ActionResult ParametersToServer()
+        {
+            InitializeViewBag("Parameters to server");
+            return View(new ParametersToServerModel());
+        }
+
+        public ActionResult Increment(ParametersToServerModel model, int value)
+        {
+            model.Increment(value);
+            return Json(model);
+        }
+
+        public ActionResult AddToString(ParametersToServerModel model, char letter, int count)
+        {
+            model.AddToString(letter + "", count);
+            return Json(model);
+        }
+
+        #endregion
+
+        #region Region
+
+        public ActionResult Region()
+        {
+            InitializeViewBag("Region");
+            var model = new RegionModel
+            {
+                Condition1 = true,
+                Condition2 = false,
+                Items = new List<string> { "A", "B", "C" },
+                ModelName = "Model",
+                SubModel = new RegionSubModel
+                {
+                    SubModelName = "SubModel",
+                    SubSubModel = new RegionSubSubModel { SubSubModelName = "SubSubModel" }
+                }
+            };
+            return View(model);
+        }
+
+        #endregion 
+
+        #region User Script
+
+        public ActionResult UserScript()
+        {
+            InitializeViewBag("User script");
+            var model = new UserScriptModel { Message = "Knockout" };
+            return View(model);
+        }
+
+        public ActionResult AddLetter(UserScriptModel model)
+        {
+            model.AddLetter();
+            return Json(model);
+        }
+
+        #endregion 
     }
 }

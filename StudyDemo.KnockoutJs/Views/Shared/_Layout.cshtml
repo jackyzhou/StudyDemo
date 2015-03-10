@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/knockout")  <!--分部頁時，頁面中間會引用到ko對象，暫不能放到頁尾-->
     @RenderSection("styles", required: false)
 </head>
 <body>
-    @RenderBody()
+    @RenderBody()    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/knockout")
     @RenderSection("scripts", required: false)
 </body>
 </html>

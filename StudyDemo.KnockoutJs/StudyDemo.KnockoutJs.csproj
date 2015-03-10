@@ -184,6 +184,9 @@
     <Content Include="Views\KoWrapper\MultipleViewModel.cshtml" />
     <Content Include="Views\KoWrapper\PartialClickCounter.cshtml" />
     <Content Include="Views\KoWrapper\PartialHelloWorld.cshtml" />
+    <Content Include="Views\KoWrapper\ParametersToServer.cshtml" />
+    <Content Include="Views\KoWrapper\Region.cshtml" />
+    <Content Include="Views\KoWrapper\UserScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StudyDemo.Framework.Knockout\StudyDemo.Framework.Knockout.csproj">
