@@ -1,0 +1,15 @@
+﻿@using StudyDemo.Framework.Knockout
+@using StudyDemo.KnockoutJs.Models
+@Model MultipleViewModelModel
+@{
+    var ko = Html.CreateKnockoutContext();
+    var hellKO = Html.CreateKnockoutContext<HelloWorldModel>("HelloWorldViewModel");
+}
+@Html.Partial("PartialClickCounter", Model.ClickCounterModel)
+<hr />
+@Html.Partial("PartialHelloWorld", Model.HelloWorldModel)
+
+@section scripts{
+    @ko.Apply(Model.ClickCounterModel, "js-clickCounterViewModelWrapper")
+    @hellKO.Apply(Model.HelloWorldModel, "js-helloWorldViewModelWrapper")
+}

@@ -173,6 +173,17 @@
     <Content Include="Views\KoWrapper\ClickCounter.cshtml" />
     <Content Include="Views\KoWrapper\SimpleList.cshtml" />
     <Content Include="Views\KoWrapper\BetterList.cshtml" />
+    <Content Include="Views\KoWrapper\BigData.cshtml" />
+    <Content Include="Views\KoWrapper\Collections.cshtml" />
+    <Content Include="Views\KoWrapper\CombineContext.cshtml" />
+    <Content Include="Views\KoWrapper\ComplexBinding.cshtml" />
+    <Content Include="Views\KoWrapper\ContactsEditor.cshtml" />
+    <Content Include="Views\KoWrapper\ControlTypes.cshtml" />
+    <Content Include="Views\KoWrapper\GiftList.cshtml" />
+    <Content Include="Views\KoWrapper\InnerComputed.cshtml" />
+    <Content Include="Views\KoWrapper\MultipleViewModel.cshtml" />
+    <Content Include="Views\KoWrapper\PartialClickCounter.cshtml" />
+    <Content Include="Views\KoWrapper\PartialHelloWorld.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StudyDemo.Framework.Knockout\StudyDemo.Framework.Knockout.csproj">

@@ -1,0 +1,14 @@
+﻿@using StudyDemo.Framework.Knockout
+@model StudyDemo.KnockoutJs.Models.BigDataModel
+@{
+    var ko = Html.CreateKnockoutContext();
+}
+<h3>Start</h3>
+Content:
+@ko.Html.Span(m => m.Key)
+@ko.Html.Span("loading...").Visible(m => !Convert.ToBoolean(m.Key))
+<h3>End</h3>
+@section scripts
+{
+    @ko.LazyApply(Model, "InitialData", "KoWrapper")
+}

@@ -25,11 +25,11 @@ namespace StudyDemo.KnockoutJs.Controllers
 
         protected void InitializeViewBag(string caption = "")
         {
-            var modelName = GetType().Name.Substring(0, GetType().Name.Length - "Controller".Length);
-            ViewBag.Model = FormatModelCode(modelName);
-            ViewBag.Controller = FormatControllerCode(modelName);
-            ViewBag.Razor = FormatRazorCode(modelName);
-            ViewBag.Description = new MvcHtmlString(FormatDescription(modelName));
+            //var modelName = GetType().Name.Substring(0, GetType().Name.Length - "Controller".Length);
+            //ViewBag.Model = FormatModelCode(modelName);
+            //ViewBag.Controller = FormatControllerCode(modelName);
+            //ViewBag.Razor = FormatRazorCode(modelName);
+            //ViewBag.Description = new MvcHtmlString(FormatDescription(modelName));
             if (!string.IsNullOrWhiteSpace(caption))
             {
                 ViewBag.Title = caption;
