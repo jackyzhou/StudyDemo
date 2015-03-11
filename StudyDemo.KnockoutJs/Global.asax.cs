@@ -1,4 +1,5 @@
 ﻿using StudyDemo.Framework.Knockout;
+using StudyDemo.KnockoutJs.Resolver;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -15,6 +16,7 @@ namespace StudyDemo.KnockoutJs
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            DependencyResolver.SetResolver(new UnityResolver(Container.InitUnityContainer()));
             ModelBinders.Binders.DefaultBinder = new KnockoutModelBinder();
         }
     }
