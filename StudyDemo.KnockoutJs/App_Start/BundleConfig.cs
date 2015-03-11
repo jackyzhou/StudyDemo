@@ -19,10 +19,12 @@ namespace StudyDemo.KnockoutJs
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                    "~/Scripts/thirdparty/knockout-3.3.0.js",
                    "~/Scripts/thirdparty/knockout.mapping-2.4.1.js",
+                   "~/Scripts/thirdparty/knockout.validation.js",
                    "~/Scripts/perpetuum.knockout.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-theme.css",
                       "~/Content/Site.css"));
 
             ////非开发环境强制开启捆绑和缩小

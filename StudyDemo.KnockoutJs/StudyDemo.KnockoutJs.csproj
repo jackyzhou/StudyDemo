@@ -159,6 +159,7 @@
     <Compile Include="Resolver\UnityResolver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
@@ -180,6 +181,7 @@
     <Content Include="Scripts\thirdparty\knockout-3.3.0.js" />
     <Content Include="Scripts\thirdparty\knockout.mapping-2.4.1.js" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\thirdparty\knockout.validation.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

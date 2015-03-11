@@ -32,13 +32,13 @@
                 <input class="input-large" data-bind='value: Number' placeholder="Number" />
             </td>
             <td>
-                <a class="btn btn-small btn-danger" href='#' data-bind=' click: $parent.removePhone'>X</a>
+                <a class="btn btn-danger" href='#' data-bind=' click: $parent.removePhone'>X</a>
             </td>
         </tr>
     </tbody>
 </table>
 <p>
-    <button class="btn btn-small btn-primary" data-bind='click: addPhone'>Add New Phone</button>
+    <button class="btn btn-primary" data-bind='click: addPhone'>Add New Phone</button>
 </p>
 <hr />
 <table class="table">
@@ -62,18 +62,18 @@
                 <input class="input-large" data-bind='value: City' placeholder="City" />
                 <p style="padding-top: 5px;">
                     <input class="input-large" data-bind='value: ZipCode' placeholder="Zip Code" />
-                    <a class="btn btn-small btn-danger" href='#' data-bind='click: $root.removeAddress'>X</a>
+                    <a class="btn btn-danger" href='#' data-bind='click: $root.removeAddress'>X</a>
                 </p>
             </td>
         </tr>
     </tbody>
 </table>
 <p>
-    <button class="btn btn-small btn-primary" data-bind='click: addAddress'>Add New Address</button>
+    <button class="btn btn-primary" data-bind='click: addAddress'>Add New Address</button>
 </p>
 <hr />
-<button class="btn btn-small btn-success" data-bind='click: saveProfile'>Save Profile</button>
-<input class="btn btn-small btn-primary" type="button" value="Back To Profile List" data-bind="click:$root.backToProfileList" />
+<button class="btn btn-success" data-bind='click: saveProfile'>Save Profile</button>
+<input class="btn btn-primary" type="button" value="Back To Profile List" data-bind="click:$root.backToProfileList" />
 
 <script src="~/Scripts/Application/CreateEdit.js"></script>
 <style>
