@@ -21,3 +21,6 @@
 6. MVC中針對KnockoutJs的封裝：（引用第三方組件：https://github.com/hazzik/DelegateDecompiler）
    http://knockoutmvc.com/
    http://knockoutmvc.com/Home/Documentation
+
+7. Knockout驗證擴展：
+   https://github.com/Knockout-Contrib/Knockout-Validation
