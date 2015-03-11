@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0530E9FC-09D4-4FDD-B12A-C67F5ECF2F31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudyDemo.Manager</RootNamespace>
+    <AssemblyName>StudyDemo.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IContactManager.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="ContactManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudyDemo.DAL\StudyDemo.DAL.csproj">
+      <Project>{f5149dc7-bb0a-4661-81bc-652db680db6b}</Project>
+      <Name>StudyDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyDemo.Domain\StudyDemo.Domain.csproj">
+      <Project>{906794cc-eda2-458f-b081-23b5c9cbed5f}</Project>
+      <Name>StudyDemo.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyDemo.DTO\StudyDemo.DTO.csproj">
+      <Project>{ca07c304-c0f8-4c14-ab88-b6a27f66f720}</Project>
+      <Name>StudyDemo.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyDemo.Framework.Core\StudyDemo.Framework.Core.csproj">
+      <Project>{a31f34ef-30ee-45a2-ad3a-da72348a18e5}</Project>
+      <Name>StudyDemo.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyDemo.Repository\StudyDemo.Repository.csproj">
+      <Project>{dd4a40ed-f950-4437-b4fe-f889ae1ee353}</Project>
+      <Name>StudyDemo.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

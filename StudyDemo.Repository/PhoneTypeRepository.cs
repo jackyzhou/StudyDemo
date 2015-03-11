@@ -1,0 +1,21 @@
+﻿using StudyDemo.DAL;
+using StudyDemo.Domain.Phone;
+
+namespace StudyDemo.Repository
+{
+    public class PhoneTypeRepository : Repository<PhoneType>, IPhoneTypeRepository
+    {
+        #region Constructor
+
+        /// <summary>
+        /// Create a new instance
+        /// </summary>
+        /// <param name="unitOfWork">Associated unit of work</param>
+        public PhoneTypeRepository(UnitOfWork unitOfWork)
+            : base(unitOfWork)
+        {
+        }
+
+        #endregion
+    }
+}

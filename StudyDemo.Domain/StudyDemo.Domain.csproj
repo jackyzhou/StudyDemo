@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{906794CC-EDA2-458F-B081-23B5C9CBED5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudyDemo.Domain</RootNamespace>
+    <AssemblyName>StudyDemo.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address\AddressAggregate.cs" />
+    <Compile Include="Address\AddressFactory.cs" />
+    <Compile Include="Address\AddressType.cs" />
+    <Compile Include="Address\IAddressRepository.cs" />
+    <Compile Include="Address\IAddressTypeRepository.cs" />
+    <Compile Include="Phone\IPhoneRepository.cs" />
+    <Compile Include="Phone\IPhoneTypeRepository.cs" />
+    <Compile Include="Phone\PhoneAggregate.cs" />
+    <Compile Include="Phone\PhoneFactory.cs" />
+    <Compile Include="Phone\PhoneType.cs" />
+    <Compile Include="ProfileAddress\IProfileAddressRepository.cs" />
+    <Compile Include="ProfileAddress\ProfileAddressAggregate.cs" />
+    <Compile Include="ProfileAddress\ProfileAddressFactory.cs" />
+    <Compile Include="ProfileAddress\ProfileSpecification.cs" />
+    <Compile Include="Profile\IProfileRepository.cs" />
+    <Compile Include="Profile\ProfileAggregate.cs" />
+    <Compile Include="Profile\ProfileFactory.cs" />
+    <Compile Include="ProfilePhone\IProfilePhoneRepository.cs" />
+    <Compile Include="ProfilePhone\ProfilePhoneAggregate.cs" />
+    <Compile Include="ProfilePhone\ProfilePhoneFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudyDemo.Framework.Core\StudyDemo.Framework.Core.csproj">
+      <Project>{a31f34ef-30ee-45a2-ad3a-da72348a18e5}</Project>
+      <Name>StudyDemo.Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
