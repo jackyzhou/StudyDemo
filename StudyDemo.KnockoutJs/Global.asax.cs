@@ -1,4 +1,5 @@
-﻿using StudyDemo.Framework.Knockout;
+﻿using StudyDemo.Framework.Core.Validator;
+using StudyDemo.Framework.Knockout;
 using StudyDemo.KnockoutJs.Resolver;
 using System.Web;
 using System.Web.Mvc;
@@ -18,6 +19,8 @@ namespace StudyDemo.KnockoutJs
 
             DependencyResolver.SetResolver(new UnityResolver(Container.InitUnityContainer()));
             ModelBinders.Binders.DefaultBinder = new KnockoutModelBinder();
+
+            EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());
         }
     }
 }

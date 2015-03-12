@@ -220,6 +220,10 @@
       <Project>{ca07c304-c0f8-4c14-ab88-b6a27f66f720}</Project>
       <Name>StudyDemo.DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\StudyDemo.Framework.Core\StudyDemo.Framework.Core.csproj">
+      <Project>{a31f34ef-30ee-45a2-ad3a-da72348a18e5}</Project>
+      <Name>StudyDemo.Framework.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StudyDemo.Framework.Knockout\StudyDemo.Framework.Knockout.csproj">
       <Project>{8480566d-5fbc-4605-854e-ec82daf75970}</Project>
       <Name>StudyDemo.Framework.Knockout</Name>
